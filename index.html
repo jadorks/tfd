@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deck of our Hearts</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <div class="container">
         <div class="card_row">
-            <button onclick="runGame('talk')">Talk</button>
-            <button onclick="runGame('flirt')">Flirt</button>
-            <button onclick="runGame('dare')">Dare</button>
+            <div class="card" onclick="runGame('talk')"><img src="/assets/images/talk.png" alt=""></div>
+            <div class="card" onclick="runGame('flirt')"><img src="/assets/images/flirt.png" alt=""></div>
+            <div class="card" onclick="runGame('dare')"><img src="/assets/images/dare.png" alt=""></div>
         </div>
-        <div id="question_view"></div>
+        <div id="question_view">Pick a card</div>
     </div>
 
+
+    <div class="credit">
+        <a href="https://www.flaticon.com/free-icons/message" title="message icons">Message icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/lips" title="lips icons">Lips icons created by Smashicons - Flaticon</a>
+    </div>
     <script src="/assets/js/main.js"></script>
 </body>
 </html>
