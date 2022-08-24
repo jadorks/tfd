@@ -10,4 +10,15 @@ async function readQuestions() {
   return questions;
 }
 
+function getQuestion(questions, card) {
+  const categoryQuestions = questions[card];
+  return categoryQuestions[
+    Math.floor(Math.random() * categoryQuestions.length)
+  ];
+}
 
+async function runGame(card) {
+  const questions = await readQuestions();
+  const selectedQuestion = getQuestion(questions, card);
+  document.getElementById('question_view').innerHTML = selectedQuestion;
+}
